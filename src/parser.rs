@@ -32,6 +32,14 @@ pub fn parse_file(filename: String) -> Vec<String> {
     parse_by_line(file)
 }
 
+pub fn parse_file_from_day(day: usize, is_test: bool) -> Vec<String>  {
+    if is_test {
+        parse_file(format!("src/solutions/inputs/day{}_testinput.txt", day))
+    } else {
+        parse_file(format!("src/solutions/inputs/day{}_input.txt", day))
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::parse_by_line;
