@@ -28,6 +28,8 @@ fn main() {
         (1, 2) => solutions::day1::solution2(args.test),
         (2, 1) => solutions::day2::solution1(args.test),
         (2, 2) => solutions::day2::solution2(args.test),
+        (3, 1) => solutions::day3::solution1(args.test),
+        (3, 2) => solutions::day3::solution2(args.test),
         (_, _) => panic!("Invalid solution or day")
     };
 
