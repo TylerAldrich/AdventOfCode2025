@@ -20,7 +20,7 @@ where
             break;
         }
 
-        read_lines.push(input.trim().to_string());
+        read_lines.push(input.trim_end_matches('\n').to_string());
     }
 
     read_lines
